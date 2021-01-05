@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C9D62C5D25A48AD800802B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C5C25A48AD800802B67 /* AppDelegate.swift */; };
 		C9D62C5F25A48AD800802B67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C5E25A48AD800802B67 /* SceneDelegate.swift */; };
 		C9D62C6125A48AD800802B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C6025A48AD800802B67 /* ViewController.swift */; };
-		C9D62C6425A48AD800802B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C6225A48AD800802B67 /* Main.storyboard */; };
 		C9D62C6625A48AD900802B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C6525A48AD900802B67 /* Assets.xcassets */; };
 		C9D62C6925A48AD900802B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C6725A48AD900802B67 /* LaunchScreen.storyboard */; };
+		C9D62C7525A48BBC00802B67 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C9D62C7425A48BBC00802B67 /* SwifterSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		C9D62C5C25A48AD800802B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9D62C5E25A48AD800802B67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9D62C6025A48AD800802B67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9D62C6325A48AD800802B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9D62C6525A48AD900802B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D62C6825A48AD900802B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9D62C6A25A48AD900802B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D62C7525A48BBC00802B67 /* SwifterSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,6 @@
 				C9D62C5C25A48AD800802B67 /* AppDelegate.swift */,
 				C9D62C5E25A48AD800802B67 /* SceneDelegate.swift */,
 				C9D62C6025A48AD800802B67 /* ViewController.swift */,
-				C9D62C6225A48AD800802B67 /* Main.storyboard */,
 				C9D62C6525A48AD900802B67 /* Assets.xcassets */,
 				C9D62C6725A48AD900802B67 /* LaunchScreen.storyboard */,
 				C9D62C6A25A48AD900802B67 /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = SwifterSwiftTutorial;
+			packageProductDependencies = (
+				C9D62C7425A48BBC00802B67 /* SwifterSwift */,
+			);
 			productName = SwifterSwiftTutorial;
 			productReference = C9D62C5925A48AD800802B67 /* SwifterSwiftTutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +112,9 @@
 				Base,
 			);
 			mainGroup = C9D62C5025A48AD800802B67;
+			packageReferences = (
+				C9D62C7325A48BBC00802B67 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+			);
 			productRefGroup = C9D62C5A25A48AD800802B67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +131,6 @@
 			files = (
 				C9D62C6925A48AD900802B67 /* LaunchScreen.storyboard in Resources */,
 				C9D62C6625A48AD900802B67 /* Assets.xcassets in Resources */,
-				C9D62C6425A48AD800802B67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9D62C6225A48AD800802B67 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9D62C6325A48AD800802B67 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9D62C6725A48AD900802B67 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +337,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9D62C7325A48BBC00802B67 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9D62C7425A48BBC00802B67 /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9D62C7325A48BBC00802B67 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9D62C5125A48AD800802B67 /* Project object */;
 }
